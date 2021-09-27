@@ -45,11 +45,11 @@ BearSSL::CertStore certStore;
 //### Auto WiFi Connect ##################
 const char* ssidNm    = "";
 
-const char* ssid2     = "Miningfarm";        //<-- ใส่ชือ Wifi รอง ตรงนี ถ้าใช้ WiFi ตัวเดียวก็ให้ใส่เหมือนกันกับ ssid1
-const char* password2 = "0970561317";         //<-- ใส่รหัส Wifi รอง ตรงนี
+const char* ssid1     = "Miningfarm";        //<-- ใส่ชือ Wifi รอง ตรงนี ถ้าใช้ WiFi ตัวเดียวก็ให้ใส่เหมือนกันกับ ssid1
+const char* password1 = "0970561317";         //<-- ใส่รหัส Wifi รอง ตรงนี
 
-const char* ssid1     = "Miningfarm";        //<-- ใส่ชือ Wifi หลัก
-const char* password1 = "0970561317";         //<-- ใส่รหัส Wifi หลัก ตรงนี
+const char* ssid2     = "Miningfarm";        //<-- ใส่ชือ Wifi หลัก
+const char* password2 = "0970561317";         //<-- ใส่รหัส Wifi หลัก ตรงนี
 
 //อันนี้ใช้ได้
 
@@ -61,7 +61,7 @@ int lastWiFi = 0;
 String USERNAME       = "";
 String RIG_IDENTIFIER = "";
 String AcctName       = "kongto123499";  //<-- ใส่ชือ User Name ตรงนี
-String BrdNm          = "ESP8266_0025"; //<-- ใส่ชือ RigName ตรงนี
+String BrdNm          = "8266_0032"; //<-- ใส่ชือ RigName ตรงนี
 
 String eeprom_acct;
 String eeprom_brd;
@@ -69,14 +69,14 @@ String HostNm          = "";
 int x;
 
 // รายละเอียดของ OTI, ตำแหน่งเก็บไฟล์
-const String FirmwareVer={"3.5"}; // Last of Version\
+const String FirmwareVer={"3.6"}; // Last of Version\
 //Siwadol
-//#define URL_fw_Version "/Thanormsin/FwESP01S/master/bin_version-Tha.txt"
-//#define URL_fw_Bin "https://raw.githubusercontent.com/Thanormsin/FwESP01S/master/fw-Tha.bin"
+//#define URL_fw_Version "/Thanormsin/FwESP01S/master/bin_ktminer.txt"
+//#define URL_fw_Bin "https://raw.githubusercontent.com/Thanormsin/FwESP01S/master/fw_ktminer.bin"
 
 //Thanormsin
-#define URL_fw_Version "/Thanormsin/FwESP01/master/bin_version-Orm.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/Thanormsin/FwESP01/master/fw-Orm.bin"
+#define URL_fw_Version "/Thanormsin/FwESP01/master/bin_version-Nop.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/Thanormsin/FwESP01/master/fw-Nop.bin"
                    
 const char* host = "raw.githubusercontent.com";
 const int httpsPort = 443;
